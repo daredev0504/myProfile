@@ -129,6 +129,66 @@ h1+p{
 }
 
 
+section.about{
+    margin-top: 2em;
+    background: #800040;
+    height: 40vh;
+    box-shadow: 0 6px 12px #37011C;
+}
+.about-header{
+    padding:.8em;
+    color:white;
+    font-weight: normal;
+    margin: 0 2em;
+}
+.fa-user-circle{
+    font-size: 1.5em;
+    margin-right:.2em ;
+    color:#FF80C0 ;
+}
+.about-notes{
+    padding:2em;
+    background: white;
+    width:90%;
+    margin: 0 auto;
+    border-radius: 40px 40px 40px 40px;
+}
+.about-notes p{
+    color:#800040;
+    text-align: justify;
+    line-height: 1.5em;
+}
+section.bio{
+    height: 50vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background: white;
+    margin-top: 2em;
+    box-shadow: 0 12px 24px rgba(0,0,0,16%);
+}
+.bio-info{
+    flex-grow: .2;
+    border: 1px solid black;
+}
+.bio-info-details{
+    display: flex;
+    justify-content:space-between;
+}
+.bio-info-details p{
+    line-height: 2em;
+    text-transform: capitalize;
+}
+.fa-pen-square{
+    font-size: 10em;
+    color:#800040;
+}
+
+
+
+
+
+
 
 
 
