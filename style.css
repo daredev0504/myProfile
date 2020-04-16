@@ -169,15 +169,23 @@ section.bio{
 }
 .bio-info{
     flex-grow: .2;
-    border: 1px solid black;
+   
+}
+.bio-name{
+    color: #800040;
 }
 .bio-info-details{
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 40px 40px;
+    box-shadow: 0 12px 24px rgba(0,0,0,16%);
+    padding:2em;
     display: flex;
     justify-content:space-between;
 }
 .bio-info-details p{
     line-height: 2em;
     text-transform: capitalize;
+    color:#800040;
 }
 .fa-pen-square{
     font-size: 10em;
