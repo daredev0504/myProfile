@@ -167,7 +167,6 @@ section.about{
 .about-notes p{
     color:#800040;
     text-align: justify;
-    line-height: 1.5em;
 }
 section.bio{
     padding: 2em;
@@ -190,6 +189,7 @@ section.bio{
     box-shadow: 0 12px 24px rgba(0,0,0,16%);
     padding:2em;
     display: flex;
+    align-items: center;
     justify-content:space-between;
 }
 .bio-info-details p{
@@ -409,6 +409,7 @@ footer h3{
     }
     .about-notes{
         width:70%;
+        font-size: .8em;
     }
     section.bio{
         display: block;
@@ -419,12 +420,19 @@ footer h3{
     .bio-icon{
        font-size:.7em;
     }
+    .device-item p,.time-item p,.quality-item p{
+        font-size: .8em;
+    }
     .display-info{
         display: block;
         text-align: center;
     }
     img{
         display:block;
+    }
+    .details1,.details2{
+        font-size:.5em;
+        width: 100%;
     }
     .choose-items{
         display:block;
@@ -458,5 +466,8 @@ footer h3{
     }
     .social-icons{
         margin: 0;
+    }
+    .fa-pen-square{
+        font-size:3em;
     }
 }
