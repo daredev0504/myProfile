@@ -246,7 +246,7 @@ section.choose-me{
     margin-top:1em;
 }
 section.get-in-touch{
-    height: 60vh;
+    height: 65vh;
     background: white;
 }
 .get-name{
@@ -277,7 +277,7 @@ label{
     color: #800040;
 }
 .contact-form{
-    margin-top: 2em;
+    margin-top: 1em;
   width:100%;
 }
 .contact-form input{
@@ -299,6 +299,8 @@ label{
 }
 textarea{
     width:100%;
+    resize: none;
+    border:1px solid #800040;
 }
 
 
@@ -313,3 +315,15 @@ textarea{
 
 
 /* footer styles */
+footer{
+    background: #800040;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-menu{
+    display: flex;
+}
+.social-icons{
+    display:flex;
+}
