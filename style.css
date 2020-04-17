@@ -24,10 +24,18 @@ main{
 
 /* header styles */
 header{
+    position: sticky;
+    padding: 1em 0;
+    top:0;
     background: #800040;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.header-circle{
+    position: absolute;
+    top:14px;
+    left:427px;
 }
 
 .header-name h2{
@@ -237,7 +245,61 @@ section.choose-me{
     color: #800040;
     margin-top:1em;
 }
-
+section.get-in-touch{
+    height: 60vh;
+    background: white;
+}
+.get-name{
+    margin-top: 2em;
+    background: #800040;
+    color:white;
+    text-align: center;
+    height: 8vh;
+}
+.get-name h3{
+    padding: .6em 0;
+    text-transform: capitalize;
+}
+.get-image img{
+    width: 100%;
+    margin-right: 80px;
+}
+.get-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:80%;
+    margin: 0 auto;
+   
+}
+label{
+    
+    color: #800040;
+}
+.contact-form{
+    margin-top: 2em;
+  width:100%;
+}
+.contact-form input{
+    border: 1px solid #800040;
+    width: 100%;
+    padding:1em;
+}
+[type='submit']{
+    background: #FF80C0;
+    width:30% !important;
+    border-radius:0px 60px 60px 40px;
+    box-shadow: 0 2px 4px #800040;
+    border: none !important;
+    color:white;
+    text-transform: capitalize;
+    font-size: 1em;
+    padding: .5em 0 !important;
+    margin-top: 1em;
+}
+textarea{
+    width:100%;
+}
 
 
 
