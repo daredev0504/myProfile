@@ -43,14 +43,20 @@ header{
     text-transform: capitalize;
 }
 .header-nav{
+    height:4vh;
     display: flex;
     justify-content: space-around;
     flex-grow: .3;
     font-weight: lighter;
 }
 .header-nav a{
+    
+    text-transform: capitalize;
     color:white;
     text-decoration: none;
+}
+.header-nav a:hover{
+  border-bottom: 2px solid white;
 }
 .header-icons{
     color:white;
@@ -91,6 +97,7 @@ section.info-section{
     content:' .';
 }
 .display-info button{
+    cursor: pointer;
     text-transform: capitalize;
     margin-top: 2em;
     color:white;
@@ -100,6 +107,10 @@ section.info-section{
     border-radius:0px 60px 60px 40px;
     box-shadow: 0 2px 4px #800040;
     font-size: 1.3em;
+    transition: background 400ms ease;
+}
+.display-info button:hover{
+    background: rgb(184, 82, 133);
 }
 .display-info h1{
     margin-bottom: .2em;
@@ -123,6 +134,7 @@ h1+p{
    position: absolute;
    left:600px;
    top:100px;
+   z-index:;
 }
 .fa-comment-dots{
     color:white;
@@ -248,6 +260,7 @@ section.choose-me{
 section.get-in-touch{
  
     background: white;
+    padding: 1em;
 }
 .get-name{
     margin-top: 2em;
@@ -276,6 +289,9 @@ label{
     
     color: #800040;
 }
+::placeholder{
+    color: rgb(190, 190, 189);
+}
 .contact-form{
     margin-top: 1em;
   width:100%;
@@ -286,6 +302,7 @@ label{
     padding:1em;
 }
 [type='submit']{
+    cursor: pointer;
     background: #FF80C0;
     width:30% !important;
     border-radius:0px 60px 60px 40px;
@@ -296,6 +313,10 @@ label{
     font-size: 1em;
     padding: .5em 0 !important;
     margin-top: 1em;
+    transition: background 400ms ease;
+}
+[type='submit']:hover{
+    background: rgb(184, 82, 133);
 }
 textarea{
     width:100%;
@@ -318,6 +339,11 @@ textarea{
 footer{
     background: #800040;
 }
+a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
 footer h3{
     color: white;
     text-transform: uppercase;
@@ -338,6 +364,10 @@ footer h3{
     margin: 0 1em;
     text-transform: uppercase;
 }
+.footer-menu p:hover{
+    color:#FF80C0;
+    cursor: pointer;
+}
 .social-icons{
     font-size: 2em;
     display:flex;
@@ -345,6 +375,7 @@ footer h3{
     margin: .5em 21em;
    
 }
+
 .fa-instagram-square,.fa-facebook-square,.fa-github-square,
 .fa-twitter-square,.fa-linkedin{
     margin: 0 .5em;
@@ -407,6 +438,10 @@ footer h3{
         justify-content: space-evenly;
       
     }
+    [type='submit']{
+        padding-right: 4em !important;
+        margin-top:0em;
+    }
    
     .social-icons{
         display: block;
@@ -415,13 +450,21 @@ footer h3{
     .footer-wrapper{
         display: block;
     }
+    .footer-menu{
+        margin: 1em 0;
+        padding: 0;
+    }
+    .footer-trademark{
+        float: right;
+    }
+    .social-icons{
+        margin: 0;
+    }
     .mysvg{
         display: none;
     }
     .fa-comment-dots,.display-icon{
         display: none;
     }
-    .bio-info-details{
-        
-    }
+   
 }
