@@ -83,23 +83,27 @@ header{
 
 /* main styles */
 section.info-section{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
     background: white;
     margin-top: 2em;
     box-shadow: 0 12px 24px rgba(0,0,0,16%);
 }
+.display-main{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1em;
+}
 .display-info{
-   margin: 2em;
+    text-align: center;
 }
-.display-info h1::after{
-    content:' .';
+.myimg{
+    margin-top: .5em;
+    text-align: center;
 }
+
 .display-info button{
     cursor: pointer;
     text-transform: capitalize;
-    margin-top: 2em;
+    margin-top: 1em;
     color:white;
     padding:.5em 1em;
     background:#FF80C0 ;
@@ -124,25 +128,12 @@ section.info-section{
 h1+p{
     font-weight: bold;
 }
-.display-pic img{
-    border:.5px solid rgb(248, 247, 247);
+img{
+ border:.5px solid rgb(248, 247, 247);
     box-shadow: 0 12px 24px rgba(0,0,0,16%);
     border-radius: 50%;
-    margin-right:8em;
 }
-.mysvg{
-   position: absolute;
-   left:600px;
-   top:100px;
-   z-index:;
-}
-.fa-comment-dots{
-    color:white;
-    font-size: 1.3em;
-    position: absolute;
-    left:620px;
-   top:120px;
-}
+
 .display-icon{
     margin-right:5em;
     color:#800040;
@@ -189,7 +180,6 @@ section.bio{
 }
 .bio-info{
     flex-grow: .2;
-   
 }
 .bio-name{
     color: #800040;
@@ -258,12 +248,11 @@ section.choose-me{
     margin-top:1em;
 }
 section.get-in-touch{
- 
+    margin-top:2em;
     background: white;
-    padding: 1em;
+    padding-bottom: 1em;
 }
 .get-name{
-    margin-top: 2em;
     background: #800040;
     color:white;
     text-align: center;
@@ -360,6 +349,7 @@ footer h3{
     display: flex;
 }
 .footer-menu p{
+    font-size: .9em;
     color: white;
     margin: 0 1em;
     text-transform: uppercase;
@@ -408,6 +398,7 @@ footer h3{
 
 @media screen and (max-width:720px){
     header{
+        width:100%;
         display: block;
     }
     .header-name{
@@ -417,12 +408,22 @@ footer h3{
         margin: 1em 0;
     }
     .about-notes{
-        width:50%
+        width:70%;
     }
     section.bio{
         display: block;
     }
     .info-section{
+        display:block;
+    }
+    .bio-icon{
+       font-size:.7em;
+    }
+    .display-info{
+        display: block;
+        text-align: center;
+    }
+    img{
         display:block;
     }
     .choose-items{
@@ -431,9 +432,7 @@ footer h3{
     .device,.quality,.time{
         width:100%;
     }
-    .header-circle{
-        display: none;
-    }
+    
     .other-icons{
         justify-content: space-evenly;
       
@@ -451,8 +450,8 @@ footer h3{
         display: block;
     }
     .footer-menu{
-        margin: 1em 0;
-        padding: 0;
+      display: block;
+      text-align: center;
     }
     .footer-trademark{
         float: right;
@@ -460,11 +459,4 @@ footer h3{
     .social-icons{
         margin: 0;
     }
-    .mysvg{
-        display: none;
-    }
-    .fa-comment-dots,.display-icon{
-        display: none;
-    }
-   
 }
