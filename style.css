@@ -140,7 +140,7 @@ h1+p{
 section.about{
     margin-top: 2em;
     background: #800040;
-    height: 40vh;
+    padding: 2em;
     box-shadow: 0 6px 12px #37011C;
 }
 .about-header{
@@ -167,7 +167,7 @@ section.about{
     line-height: 1.5em;
 }
 section.bio{
-    height: 50vh;
+    padding: 2em;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -202,7 +202,7 @@ section.bio{
 
 section.choose-me{
     margin-top: 2em;
-    height: 60vh;
+    padding: 2em;
     background: white;
     box-shadow: 0 12px 24px rgba(0,0,0,16%);
 }
@@ -227,7 +227,7 @@ section.choose-me{
 .device,.quality,.time{
     margin-top: 2em;
     width: 30%;
-    height: 40vh;
+  
     background: white;
     box-shadow: 0 12px 24px #9B9999;
 }
@@ -235,7 +235,7 @@ section.choose-me{
    text-align: center;
 }
 .device-item p,.time-item p,.quality-item p{
-    line-height: 2em;
+    line-height: 1.5em;
     color: #800040;
     margin-top:.5em;
 }
@@ -246,7 +246,7 @@ section.choose-me{
     margin-top:1em;
 }
 section.get-in-touch{
-    height: 65vh;
+ 
     background: white;
 }
 .get-name{
@@ -254,7 +254,7 @@ section.get-in-touch{
     background: #800040;
     color:white;
     text-align: center;
-    height: 8vh;
+    
 }
 .get-name h3{
     padding: .6em 0;
@@ -317,13 +317,111 @@ textarea{
 /* footer styles */
 footer{
     background: #800040;
+}
+footer h3{
+    color: white;
+    text-transform: uppercase;
+}
+.footer-wrapper{
+    margin-top: 2em;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items:center;
+    justify-content: space-between;
+    max-height:500px;
+    box-shadow:0 -1px 4px #250415;
 }
 .footer-menu{
     display: flex;
 }
+.footer-menu p{
+    color: white;
+    margin: 0 1em;
+    text-transform: uppercase;
+}
 .social-icons{
+    font-size: 2em;
     display:flex;
+    color:white;
+    margin: .5em 21em;
+   
+}
+.fa-instagram-square,.fa-facebook-square,.fa-github-square,
+.fa-twitter-square,.fa-linkedin{
+    margin: 0 .5em;
+}
+
+.footer-trademark{
+    color: white;
+    margin-right: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px){
+    header{
+        display: block;
+    }
+    .header-name{
+        text-align: center;
+    }
+    .header-nav{
+        margin: 1em 0;
+    }
+    .about-notes{
+        width:50%
+    }
+    section.bio{
+        display: block;
+    }
+    .info-section{
+        display:block;
+    }
+    .choose-items{
+        display:block;
+    }
+    .device,.quality,.time{
+        width:100%;
+    }
+    .header-circle{
+        display: none;
+    }
+    .other-icons{
+        justify-content: space-evenly;
+      
+    }
+   
+    .social-icons{
+        display: block;
+        margin: 0 1em;
+    }
+    .footer-wrapper{
+        display: block;
+    }
+    .mysvg{
+        display: none;
+    }
+    .fa-comment-dots,.display-icon{
+        display: none;
+    }
+    .bio-info-details{
+        
+    }
 }
